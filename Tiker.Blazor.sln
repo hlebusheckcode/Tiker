@@ -3,15 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33627.172
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tiker.Models", "Tiker.Models\Tiker.Models.csproj", "{24251858-457E-4F6F-82FB-5C4347A0FE69}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tiker", "Tiker", "{E0938903-42DE-41EE-92F3-6F59B26A0672}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tiker.Repository", "Tiker.Repository\Tiker.Repository.csproj", "{D365D44A-FDA8-488F-929A-D630AF964398}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tiker.Models", "Tiker\Tiker.Models\Tiker.Models.csproj", "{04F53BAA-DF74-4B83-AEE0-2BEF2326E75D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tiker.ViewModels", "Tiker.ViewModels\Tiker.ViewModels.csproj", "{6F1D8039-FD12-41C3-B2CD-3000329F87BA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tiker.ViewModels", "Tiker\Tiker.ViewModels\Tiker.ViewModels.csproj", "{02FC1EFF-BADD-4E9B-9B92-D35934A6591F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tiker.Repository.EntityFramework", "Tiker.Repository.EntityFramework\Tiker.Repository.EntityFramework.csproj", "{11BA02CF-01DE-4D2C-8985-D05A302132B5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tiker.Blazor", "Blazor\Tiker.Blazor\Tiker.Blazor.csproj", "{7D8963C5-A818-4F96-A9FD-6565F30E7FFF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tiker.Blazor", "Tiker.Blazor\Tiker.Blazor.csproj", "{7F28015A-A2B8-4FA1-B08A-920DB63DE4C2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tiker.Views", "Blazor\Tiker.Views\Tiker.Views.csproj", "{08984FDC-ABD7-4CF7-806C-EAF8E3A281E5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tiker.Repositories", "Tiker\Tiker.Repositories\Tiker.Repositories.csproj", "{00ED8F24-11B2-4C6A-BD94-DA4F9838D04F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tiker.Repositories.EntityFramework", "Tiker\Tiker.Repositories.EntityFramework\Tiker.Repositories.EntityFramework.csproj", "{96D92A84-E798-4753-B916-80CD9377358C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,29 +23,40 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{24251858-457E-4F6F-82FB-5C4347A0FE69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{24251858-457E-4F6F-82FB-5C4347A0FE69}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{24251858-457E-4F6F-82FB-5C4347A0FE69}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{24251858-457E-4F6F-82FB-5C4347A0FE69}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D365D44A-FDA8-488F-929A-D630AF964398}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D365D44A-FDA8-488F-929A-D630AF964398}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D365D44A-FDA8-488F-929A-D630AF964398}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D365D44A-FDA8-488F-929A-D630AF964398}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6F1D8039-FD12-41C3-B2CD-3000329F87BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6F1D8039-FD12-41C3-B2CD-3000329F87BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6F1D8039-FD12-41C3-B2CD-3000329F87BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6F1D8039-FD12-41C3-B2CD-3000329F87BA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{11BA02CF-01DE-4D2C-8985-D05A302132B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{11BA02CF-01DE-4D2C-8985-D05A302132B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{11BA02CF-01DE-4D2C-8985-D05A302132B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{11BA02CF-01DE-4D2C-8985-D05A302132B5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7F28015A-A2B8-4FA1-B08A-920DB63DE4C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7F28015A-A2B8-4FA1-B08A-920DB63DE4C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7F28015A-A2B8-4FA1-B08A-920DB63DE4C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7F28015A-A2B8-4FA1-B08A-920DB63DE4C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04F53BAA-DF74-4B83-AEE0-2BEF2326E75D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04F53BAA-DF74-4B83-AEE0-2BEF2326E75D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04F53BAA-DF74-4B83-AEE0-2BEF2326E75D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04F53BAA-DF74-4B83-AEE0-2BEF2326E75D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02FC1EFF-BADD-4E9B-9B92-D35934A6591F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02FC1EFF-BADD-4E9B-9B92-D35934A6591F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02FC1EFF-BADD-4E9B-9B92-D35934A6591F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02FC1EFF-BADD-4E9B-9B92-D35934A6591F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D8963C5-A818-4F96-A9FD-6565F30E7FFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D8963C5-A818-4F96-A9FD-6565F30E7FFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D8963C5-A818-4F96-A9FD-6565F30E7FFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D8963C5-A818-4F96-A9FD-6565F30E7FFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08984FDC-ABD7-4CF7-806C-EAF8E3A281E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08984FDC-ABD7-4CF7-806C-EAF8E3A281E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08984FDC-ABD7-4CF7-806C-EAF8E3A281E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08984FDC-ABD7-4CF7-806C-EAF8E3A281E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00ED8F24-11B2-4C6A-BD94-DA4F9838D04F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00ED8F24-11B2-4C6A-BD94-DA4F9838D04F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00ED8F24-11B2-4C6A-BD94-DA4F9838D04F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00ED8F24-11B2-4C6A-BD94-DA4F9838D04F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96D92A84-E798-4753-B916-80CD9377358C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96D92A84-E798-4753-B916-80CD9377358C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96D92A84-E798-4753-B916-80CD9377358C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96D92A84-E798-4753-B916-80CD9377358C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{04F53BAA-DF74-4B83-AEE0-2BEF2326E75D} = {E0938903-42DE-41EE-92F3-6F59B26A0672}
+		{02FC1EFF-BADD-4E9B-9B92-D35934A6591F} = {E0938903-42DE-41EE-92F3-6F59B26A0672}
+		{08984FDC-ABD7-4CF7-806C-EAF8E3A281E5} = {E0938903-42DE-41EE-92F3-6F59B26A0672}
+		{00ED8F24-11B2-4C6A-BD94-DA4F9838D04F} = {E0938903-42DE-41EE-92F3-6F59B26A0672}
+		{96D92A84-E798-4753-B916-80CD9377358C} = {E0938903-42DE-41EE-92F3-6F59B26A0672}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B4AE0F1E-883F-4661-B6F1-28BEC3957029}
